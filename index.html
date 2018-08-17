@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans" rel="stylesheet">
+    <!-- Materialize CDN -->
+    <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
 
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+    </script>
     </script>
     <title>Sean Briar O'Neill</title>
   </head>
@@ -56,7 +63,7 @@
           I earned my skills as a full stack web developer while attending General Assembly's Web Development Immersive bootcamp. This experience was equal parts exciting and challenging, and I use what I learned there to develop passion projects and be a successful web developer professionally.
           <br />
           <br />
-          I love meeting new people and I am a zombie for coffee. So pick up that phone or shoot me an email. Let's connect! 
+          I love meeting new people and I am a zombie for coffee. So pick up that phone or shoot me an email. Let's connect!
         </p>
       </div>
     </div>
@@ -66,82 +73,101 @@
       <a name='projectsTarget'></a>
       <p class='sectionHeader'> Projects</p>
       <div class='projectBody'>
-        <!-- Final Project here -->
-        <div class='box'>
-          <div class='projectContent'>
-            <h2>myMarkets</h2>
-            <p>
-              myMarkets is an app that makes it easy to locate businesses that accept EBT food assistance. This project was part of a final group assignment at General Assembly. My responsibility in creating this app was aiding in building React components, seeding Postgres database, general concept, and group organization with Trello.
-              <br />
-              <br />
-              <em>Technologies Used:</em> HTML, CSS, Ruby on Rails, React, Postgres
-              <br />
-              <br />
-              Locate your market <a target='_blank' href=''>here</a>.
-              <br />
-              Check out the gitHub repo <a target='_blank' href=''>here</a>.
-            </p>
+
+<!-- ============ EnbyLoo ===============-->
+        <div class="card small">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/office.jpg">
           </div>
-          <img class='projectImage' src='css/assets/myMarket.png' />
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">EnbyLoo<i class="material-icons right"></i></span>
+              <p><a target='_blank' href=''>Live site</a>|<a target='_blank' href=''>GitHub</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
         </div>
 
-        <div class='box'>
-          <img class='projectImage' src='css/assets/tiki.png' />
-          <div class='projectContent'>
-            <h2>The Tipsy Tiki</h2>
-            <p>
+<!-- ========= myMarkets ============ -->
+        <div class="card small sticky-action">
+          <div class="card-image ">
+            <img class="activator projectImage" src="css/assets/myMarket.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">myMarkets<i class="material-icons right"></i></span>
+            <p><a target='_blank' href=''>Live site</a>|<a target='_blank' href=''>GitHub</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">myMarkets<i class="material-icons right">X</i></span>
+            <div class='projectParagraph'>
+              <p>myMarkets is an app that makes it easy to locate businesses that accept EBT food assistance. This project was part of a final group assignment at General Assembly. My responsibility in creating this app was aiding in building React components, seeding Postgres database, general concept, and group organization with Trello.</p>
+              <p><em>Technologies Used:</em> HTML, CSS, Ruby on Rails, React, Postgres</p>
+            </div>
+          </div>
+        </div>
+
+<!-- ======= Tipsy Tiki ======== -->
+        <div class="card small">
+          <div class="card-image ">
+            <img class="activator projectImage" src="css/assets/tiki.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">The Tipsy Tiki<i class="material-icons right"></i></span>
+            <p><a target='_blank' href='https://tipsytiki.herokuapp.com/'>Live site</a>|<a target='_blank' href='https://github.com/colleencleary/tikidrinks'>GitHub</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">The Tipsy Tiki<i class="material-icons right">X</i></span>
+            <p class='projectParagraph'>
               This app was a group project put together by myself and two other GA students. For this project, I was responsible for writing and maintaining the backend functionality with full CRUD and 7 RESTful routes.
               <br />
               <br />
               <em>Technologies Used:</em> HTML, CSS, Heroku, Node.js, Express, MongoDB, AngularJS.
-              <br />
-              <br />
-              Find your favorite drink <a target='_blank' href='https://tipsytiki.herokuapp.com/'>here</a>.
-              <br />
-              Check out the gitHub repo <a target='_blank' href='https://github.com/colleencleary/tikidrinks'>here</a>.
             </p>
           </div>
         </div>
 
-
-        <div class='box'>
-          <div class='projectContent'>
-            <h2>bookshelf.</h2>
-            <p>
+<!-- ========= bookshelf. =========== -->
+        <div class="card small">
+          <div class="card-image ">
+            <img class="activator projectImage" src="css/assets/books.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">bookshelf.<i class="material-icons right"></i></span>
+            <p><a target='_blank' href='https://still-spire-94893.herokuapp.com/books'>Live site</a>|<a target='_blank' href='https://github.com/SeanBriar/bookshelfApp'>GitHub</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">bookshelf.<i class="material-icons right">X</i></span>
+            <p class='projectParagraph'>
               bookshelf. is a literature directory that allows users to keep track of their favorite books. This is a full MEAN stack app that includes all 7 RESTful routes and a sessions/auth login feature.
               <br />
               <br />
               <em>Technologies Used:</em> HTML, CSS, Heroku, Node.js, Express, MongoDB, AngularJS.
-              <br />
-              <br />
-              Add to the directory <a target='_blank' href='https://still-spire-94893.herokuapp.com/books'>here</a>.
-              <br />
-              Check out the gitHub repo <a target='_blank' href='https://github.com/SeanBriar/bookshelfApp'>here</a>.
             </p>
           </div>
-          <img class='projectImage' src='css/assets/books.png' />
         </div>
 
-        <div class='box'>
-          <img class='projectImage' src='css/assets/hpc42.png' />
-          <div class='projectContent'>
-            <h2>Harry Potter Connect 4</h2>
+<!-- ======== HPC4 ============ -->
+        <div class="card small">
+          <div class="card-image ">
+            <img class="activator projectImage" src="css/assets/hpc42.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Harry Potter Connect4<i class="material-icons right"></i></span>
+            <p><a target='_blank' href='https://seanbriar.github.io/'>Live site</a>|<a target='_blank' href='https://github.com/SeanBriar/SeanBriar.github.io'>GitHub</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Harry Potter Connect4<i class="material-icons right">X</i></span>
             <p>
               My first attempt at creating a game app. I wanted to mimic the design themes seen in the Harry Potter franchise. This build was fun and challenging! As with all of my projects, it continues to be an app that I will go back to and improve.
               <br />
               <br />
               <em>Technologies Used:</em> HTML, CSS, jQuery, GitHub Pages.
-              <br />
-              <br />
-              Play the game <a target='_blank' href='https://seanbriar.github.io/'>here</a>.
-              <br />
-              Check out the gitHub repo <a target='_blank' href='https://github.com/SeanBriar/SeanBriar.github.io'>here</a>.
             </p>
           </div>
         </div>
-      </div>
-    </div>
-
+</div>
+</div>
     <!-- contact -->
     <div class='contact'>
       <a class='target' name='contactTarget'></a>
@@ -161,7 +187,7 @@
 
         </div>
         </div>
-        <img class='deskImg' src='css/assets/desk.jpg' />
+        <!-- <img class='deskImg' src='css/assets/desk.jpg' /> -->
     </div>
     <!-- Small footer -->
   </body>
