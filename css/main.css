@@ -1,0 +1,198 @@
+/* Variables */
+
+:root {
+  --green-grey: #35524A;
+  --metal-grey: #627C85;
+  --spanish-grey: #8FA998;
+  --weldon-blue: #779CAB;
+  --magic-mint: #A2E8DD;
+  --powder-white: rgb(223, 223, 223, .8);
+}
+
+/* =============== General ================ */
+body {
+  margin: auto;
+  border: 7px solid var(--green-grey);
+}
+
+.sectionHeader {
+  color: var(--green-grey);
+  padding: 15px 30px 0px 10px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  margin: 0;
+  max-width: 40%;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+/* ============== SideNav ================ */
+
+.sideNav {
+  font-family: 'Lora', serif;
+  padding: 20px 10px 0px 20px;
+  color: var(--green-grey);
+  font-family: 'Nanum Gothic', sans-serif;
+  border-right: 1px solid var(--green-grey);
+  border-bottom: 1px solid var(--green-grey);
+  max-width: 20%;
+  /* height: 100%; */
+}
+
+.profilePic {
+  margin-top: 30px;
+  padding: 20px 10px 20px 10px;
+  border-radius: 60%;
+  width: 150px;
+}
+
+.navItems {
+  padding: 20px 0 0 30px;
+}
+
+.navBox {
+  margin: auto;
+  padding: 10px;
+}
+
+.navBox:hover {
+  font-size: 20px;
+}
+
+
+/* ================ Header =================*/
+.header {
+  background-size: cover;
+  background-image: url('assets/forest_fog.jpg');
+  margin: 0;
+  width: 100%;
+  height: 800px;
+}
+
+h1 {
+  color: var(--green-grey);
+ text-align: right;
+ font-size: 60px;
+ padding: 15px 30px 0px 0px;
+ font-family: 'Nanum Gothic', sans-serif;
+ font-weight: lighter;
+ margin: 0;
+}
+
+h3 {
+ color: var(--green-grey);
+ text-align: right;
+ padding: 15px 30px 0px 0px;
+ font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* =============== Main Body ================*/
+.main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:
+}
+
+/* ================ Projects ================*/
+
+.projects {
+  margin: auto;
+  border-bottom: 1px solid var(--green-grey);
+}
+
+.projectBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+
+}
+.box {
+  display: flex;
+  justify-content: flex-start;
+  height: 350px;
+  width: 950px;
+  -webkit-box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.projectImage {
+  height: 350px;
+}
+
+.projectContent {
+  padding: 15px;
+}
+
+h2 {
+  color: var(--green-grey);
+  font-family: 'Nanum Gothic', sans-serif;
+  text-decoration: underline;
+}
+
+/* ================About Me ================*/
+ .aboutMe {
+   border-bottom: 1px solid var(--green-grey);
+   padding-bottom: 25px;
+ }
+
+.aboutMeText {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 20px;
+}
+
+p, .welcome {
+  width: 600px;
+}
+
+/* ========= Contact ========== */
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 300px;
+}
+
+.contactBox {
+  width: 60%;
+}
+.contactInfoDiv {
+  text-align: center;
+  -webkit-box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
+
+}
+.contactInfo {
+  padding: 10px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 25px;
+}
+
+.deskImg {
+  height: 300px;
+}
+
+
+
+
+/* =========== CREDITS =========== */
+
+/* Box Shadow: https://www.cssmatic.com/box-shadow */
+/* Forest photo: Jay Mantri on Unsplash */
+/* Desk photo: Fabian Grohs on Upsplash */
