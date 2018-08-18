@@ -7,16 +7,17 @@
   --weldon-blue: #779CAB;
   --magic-mint: #A2E8DD;
   --powder-white: rgb(223, 223, 223, .8);
+  --dark-green:  rgb(17, 47, 30);
 }
 
 /* =============== General ================ */
 body {
   margin: auto;
-  border: 7px solid var(--green-grey);
+  border: 7px solid  rgb(17, 47, 30);
 }
 
 .sectionHeader {
-  color: var(--green-grey);
+  color: rgb(17, 47, 30);
   padding: 15px 30px 0px 10px;
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: lighter;
@@ -28,6 +29,7 @@ body {
 
 a {
   text-decoration: none;
+
 }
 /* ============== SideNav ================ */
 
@@ -53,6 +55,10 @@ a {
   padding: 20px 0 0 30px;
 }
 
+.navItem {
+    color: rgb(17, 47, 30);
+    font-size: 16px;
+}
 .navBox {
   margin: auto;
   padding: 10px;
@@ -82,8 +88,8 @@ h1 {
  margin: 0;
 }
 
-h3 {
- color: var(--green-grey);
+h5 {
+ color:  rgb(17, 47, 30);
  text-align: right;
  padding: 15px 30px 0px 0px;
  font-family: 'Nanum Gothic', sans-serif;
@@ -95,7 +101,53 @@ h3 {
   flex-direction: row-reverse;
   justify-content:
 }
+/* ================About Me ================*/
+.aboutMe {
+  border-bottom: 1px solid var(--green-grey);
+  background-color: #ededed;
+}
 
+.aboutMeText {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 20px;
+}
+
+p, .welcome {
+  width: 400px;
+}
+
+.skills {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+  padding-top: 20px;
+  width: 350px;
+  background-color: rgb(17, 47, 30);
+  color: white;
+}
+
+.icons {
+  text-align: center;
+  margin: auto;
+}
+
+ul {
+  font-size: 16px;
+}
+
+li {
+  padding: 5px;
+}
+
+.medium {
+  padding: 10px;
+}
 /* ================ Projects ================*/
 
 .projects {
@@ -133,65 +185,56 @@ h2 {
 }
 
 .card {
-  width: 425px;
+  width: 350px;
   height: 450px;
-}
-/* ================About Me ================*/
- .aboutMe {
-   border-bottom: 1px solid var(--green-grey);
-   padding-bottom: 25px;
- }
-
-.aboutMeText {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-  padding-right: 20px;
-}
-
-p, .welcome {
-  width: 600px;
 }
 
 /* ========= Contact ========== */
 
 .contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 300px;
+  height: 200px;
+  background-color: rgb(17, 47, 30);
+  transition: all 0.5s ease;
+}
+
+.contactHeader {
+  color: white;
+  padding: 15px 30px 0px 10px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: lighter;
+  font-size: 40px;
+  margin: 0;
+  max-width: 40%;
+  margin-bottom: 30px;
 }
 
 .contactBox {
-  width: 60%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
 }
-.contactInfoDiv {
-  text-align: center;
-  -webkit-box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
-  box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.75);
 
+.contactInfoDiv {
+  border-left: 1px solid white;
+  height: 170px;
+  margin: 20px;
+  width: 500px;
 }
 .contactInfo {
-  padding: 10px;
+  margin: auto;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
-  margin-top: 25px;
+  color: white;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 
-.deskImg {
-  height: 300px;
+i {
+  padding-right: 7px;
 }
-
 
 
 
 /* =========== CREDITS =========== */
 
-/* Box Shadow: https://www.cssmatic.com/box-shadow */
 /* Forest photo: Jay Mantri on Unsplash */
-/* Desk photo: Fabian Grohs on Upsplash */

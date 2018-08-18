@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src='js/app.js'></script>
     <link rel="stylesheet" href="css/main.css">
     <!-- google fonts -->
@@ -9,12 +12,10 @@
     <!-- Materialize CDN -->
     <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-
-    </script>
-    </script>
+     <!-- Matarialize Icons -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Sean Briar O'Neill</title>
   </head>
   <body>
@@ -22,18 +23,26 @@
       <!-- Heading with name and picture -->
       <div class='header'>
         <h1>Sean Briar O'Neill</h1>
-        <h3><em>Full Stack Web Developer</em> </h3>
+        <h5><em>Full Stack Web Developer</em></h5>
 
       </div>
       <!-- Nav with links to contact, projects, github, linked in -->
       <div class='sideNav'>
-        <img class='profilePic' src="css/assets/profile_pic_small.png" alt="Sean Briar O'Neill">
+        <img class='profilePic' style="width:100%;" src="css/assets/profile_pic_small.png" alt="Sean Briar O'Neill">
         <div class='navItems'>
           <div class='navBox' >
-            <a class='navItem' href='#aboutMeTarget'>About Me</a>
+            <a class='navItem aboutMeLink' href='#aboutMe'>About Me</a>
           </div>
           <div class='navBox'>
-            <a class='navItem'href='#projectsTarget'>Projects</a>
+            <a class='navItem projectsLink'href='#projectsTarget'>Projects</a>
+          </div>
+          <div class='navBox'>
+            <a class='navItem contactLink' href='#contactTarget'>Contact</a>
+          </div>
+          <div class='navBox'>
+            <div class='navItem'>
+              <..../>
+            </div>
           </div>
           <div class='navBox'>
             <a class='navItem' href="https://github.com/SeanBriar" target="_blank">GitHub</a>
@@ -42,42 +51,48 @@
             <a class='navItem'> Resume</a>
 
           </div>
-          <div class='navBox'>
-            <a class='navItem' href='#contactTarget'>Contact</a>
-          </div>
         </div>
       </div>
 
     </div>
 
     <!-- About Me -->
-    <div class='aboutMe'>
+    <div class='aboutMe' id='aboutMe'>
 
       <div class='aboutMeText'>
-        <a name="aboutMeTarget"></a>
+        <!-- <a name="aboutMeTarget"></a> -->
         <p class='welcome sectionHeader'> Welcome, it's nice to meet you.</p>
         <p>
           Hi, I am Sean Briar. When I am not adventuring outside or have my nose in a book, I am helping to improve the wellbeing of underrespresented communities via public interest technology. I use my anthropological background to see technology through a humanistic lens, and try to cultivate meaningful web applications that enrich the lives of others.
           <br />
           <br />
           I earned my skills as a full stack web developer while attending General Assembly's Web Development Immersive bootcamp. This experience was equal parts exciting and challenging, and I use what I learned there to develop passion projects and be a successful web developer professionally.
-          <br />
-          <br />
-          I love meeting new people and I am a zombie for coffee. So pick up that phone or shoot me an email. Let's connect!
         </p>
+        <div class='skills'>
+          <div class='icons'>
+            <i class="material-icons medium">all_inclusive</i><i class="material-icons medium">keyboard</i> <i class="material-icons medium">settings_ethernet</i>
+          </div>
+          <ul>
+            <li><i class="material-icons tiny">keyboard_arrow_right</i>HTML, CSS, & Sass</li>
+            <li><i class="material-icons tiny">keyboard_arrow_right</i>JavaScript, Ruby</li>
+            <li><i class="material-icons tiny">keyboard_arrow_right</i>React, Angular.Js</li>
+            <li><i class="material-icons tiny">keyboard_arrow_right</i>Node.js, Ruby on Rails, Express</li>
+            <li><i class="material-icons tiny">keyboard_arrow_right</i>MongoDB, Postgres</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <!-- Projects -->
-    <div class='projects'>
+    <div class='projects' id='projects'>
       <a name='projectsTarget'></a>
-      <p class='sectionHeader'> Projects</p>
+      <p class='sectionHeader'>My Work</p>
       <div class='projectBody'>
 
 <!-- ============ EnbyLoo ===============-->
         <div class="card small">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="images/office.jpg">
+            <img class="activator" src="#">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">EnbyLoo<i class="material-icons right"></i></span>
@@ -166,28 +181,27 @@
             </p>
           </div>
         </div>
-</div>
-</div>
+
+      </div>
+    </div>
     <!-- contact -->
-    <div class='contact'>
+    <div class='contact' id='contact'>
       <a class='target' name='contactTarget'></a>
       <div class='contactBox'>
-
-        <p class='sectionHeader'> Let's Chat!</p>
+        <p class='contactHeader'> Say Hello...</p>
         <div class='contactInfoDiv' >
           <p class='contactInfo'>
-            <em> </em>Sean.Briar1011@gmail.com
+            <i class="material-icons tiny">email</i> Sean.Briar1011@gmail.com
             <br />
             <br />
-            <em></em> 503-975-0735
+            <i class="material-icons tiny">ring_volume</i> 503-975-0735
             <br />
             <br />
-            Reach out to my <a href='https://www.linkedin.com/in/seanbriar/' target='_blank'>LinkedIn</a>
+            <i class="material-icons tiny">textsms</i> <a href='https://www.linkedin.com/in/seanbriar/' target='_blank'>LinkedIn</a>
           </p>
 
         </div>
         </div>
-        <!-- <img class='deskImg' src='css/assets/desk.jpg' /> -->
     </div>
     <!-- Small footer -->
   </body>
