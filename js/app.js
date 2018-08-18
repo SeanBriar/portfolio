@@ -13,10 +13,17 @@ $(()=>{
         );
     });
 
-     $('.contactLink').click(function(){
-          $('html, body').animate({
-              scrollTop: $('#contact').position().top },
-              1000
-          );
-      });
+   $('.contactLink').click(function(){
+        $('html, body').animate({
+            scrollTop: $('#contact').position().top },
+            1000
+        );
+    });
+
+    $('.backToTopLink').click(function(){
+         $('html, body').animate({
+             scrollTop: $('#topTarget').position().top },
+             1000
+         );
+     });
 })

@@ -27,7 +27,8 @@
 
       </div>
       <!-- Nav with links to contact, projects, github, linked in -->
-      <div class='sideNav'>
+      <div class='sideNav' id='topTarget'>
+
         <img class='profilePic' style="width:100%;" src="css/assets/profile_pic_small.png" alt="Sean Briar O'Neill">
         <div class='navItems'>
           <div class='navBox' >
@@ -38,11 +39,6 @@
           </div>
           <div class='navBox'>
             <a class='navItem contactLink' href='#contactTarget'>Contact</a>
-          </div>
-          <div class='navBox'>
-            <div class='navItem'>
-              <..../>
-            </div>
           </div>
           <div class='navBox'>
             <a class='navItem' href="https://github.com/SeanBriar" target="_blank">GitHub</a>
@@ -60,7 +56,6 @@
     <div class='aboutMe' id='aboutMe'>
 
       <div class='aboutMeText'>
-        <!-- <a name="aboutMeTarget"></a> -->
         <p class='welcome sectionHeader'> Welcome, it's nice to meet you.</p>
         <p>
           Hi, I am Sean Briar. When I am not adventuring outside or have my nose in a book, I am helping to improve the wellbeing of underrespresented communities via public interest technology. I use my anthropological background to see technology through a humanistic lens, and try to cultivate meaningful web applications that enrich the lives of others.
@@ -90,7 +85,7 @@
       <div class='projectBody'>
 
 <!-- ============ EnbyLoo ===============-->
-        <div class="card small">
+        <!-- <div class="card small">
           <div class="card-image waves-effect waves-block waves-light">
             <img class="activator" src="#">
           </div>
@@ -102,7 +97,7 @@
             <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
             <p>Here is some more information about this product that is only revealed once clicked on.</p>
           </div>
-        </div>
+        </div> -->
 
 <!-- ========= myMarkets ============ -->
         <div class="card small sticky-action">
@@ -115,9 +110,11 @@
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">myMarkets<i class="material-icons right">X</i></span>
-            <div class='projectParagraph'>
-              <p>myMarkets is an app that makes it easy to locate businesses that accept EBT food assistance. This project was part of a final group assignment at General Assembly. My responsibility in creating this app was aiding in building React components, seeding Postgres database, general concept, and group organization with Trello.</p>
-              <p><em>Technologies Used:</em> HTML, CSS, Ruby on Rails, React, Postgres</p>
+            <div >
+              <p class='projectParagraph'>myMarkets is an app that makes it easy to locate businesses that accept EBT food assistance. This project was part of a final group assignment at General Assembly. My responsibility in creating this app was aiding in building React components, seeding Postgres database, general concept, and group organization with Trello.
+                <br />
+                <br />
+              <em>Technologies Used:</em> HTML, CSS, Ruby on Rails, React, Postgres</p>
             </div>
           </div>
         </div>
@@ -173,7 +170,7 @@
           </div>
           <div class="card-reveal">
             <span class="card-title grey-text text-darken-4">Harry Potter Connect4<i class="material-icons right">X</i></span>
-            <p>
+            <p class='projectParagraph'>
               My first attempt at creating a game app. I wanted to mimic the design themes seen in the Harry Potter franchise. This build was fun and challenging! As with all of my projects, it continues to be an app that I will go back to and improve.
               <br />
               <br />
@@ -188,7 +185,11 @@
     <div class='contact' id='contact'>
       <a class='target' name='contactTarget'></a>
       <div class='contactBox'>
-        <p class='contactHeader'> Say Hello...</p>
+        <div class='headerArrow'>
+          <p id='sayHello'> Say Hello...</p>
+          <a class='navItem backToTopLink' id='backToTopLink' href='#top'> <i class="material-icons">arrow_upward</i> </a>
+
+        </div>
         <div class='contactInfoDiv' >
           <p class='contactInfo'>
             <i class="material-icons tiny">email</i> Sean.Briar1011@gmail.com
