@@ -10,6 +10,20 @@
   --dark-green:  rgb(17, 47, 30);
 }
 
+@media (max-width: 480px) {
+  .header {
+    font-size: 10px;
+  }
+
+  .sideNav {
+    min-width: 130px;
+  }
+
+  .sectionHeader {
+    font-size: 10px;
+  }
+}
+
 /* =============== General ================ */
 body {
   margin: auto;
