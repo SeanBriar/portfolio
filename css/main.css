@@ -243,6 +243,11 @@ h2 {
   color: white;
   padding-left: 30px;
   padding-top: 10px;
+  width: 420px;
+}
+
+.contactInfo a{
+  color: white;
 }
 
 i {
