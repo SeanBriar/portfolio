@@ -1,0 +1,17 @@
+Do we have peanut butter?
+  No - We do not have peanut butter - conditional - true/false
+    Get PB - function then,
+  Yes - store in variable
+Do we have jelly?
+  No - We do not have Jelly- conditional - true/false
+    Get Jelly - function then,
+  Yes - store in variable
+Do we have two pieces of bread?
+  No - We do not have bread- conditional - true/false
+    Get bread - function then,
+  Yes - store in variable
+
+All ingredients stored separate variables
+Created variable including both PB and Jelly
+Spread PBJ contents on bread - concat
+Eat sammy - functions
