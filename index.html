@@ -8,34 +8,30 @@
     <script type="text/javascript" src='js/app.js'></script>
     <link rel="stylesheet" href="css/main.css">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans" rel="stylesheet">
-    <!-- Materialize CDN -->
-    <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-     <!-- Matarialize Icons -->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!-- favicon -->
-      <link rel="shortcut icon" href="css/assets/favicon.ico" type="image/x-icon">
-      <link rel="icon" href="css/assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Open+Sans|Sedgwick+Ave" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="css/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="css/assets/favicon.ico" type="image/x-icon">
     <title>Sean Briar O'Neill</title>
   </head>
+
+
+
   <body>
     <div class='main'>
-      <!-- Heading with name and picture -->
-      <div class='header'>
-        <h1>Sean Briar O'Neill</h1>
-        <h5><em>Full Stack Web Developer</em></h5>
-
-      </div>
       <!-- Nav with links to contact, projects, github, linked in -->
-      <div class='sideNav' id='topTarget'>
-
-        <img class='profilePic' style="width:100%;" src="css/assets/profile_pic_small.png" alt="Sean Briar O'Neill">
+      <div class='nav' id='topTarget'>
+        <h1>
+          Sean Briar O'Neill
+        </h1>
         <div class='navItems'>
           <div class='navBox' >
             <a class='navItem aboutMeLink' href='#aboutMe'>About Me</a>
+          </div>
+          <div class='navBox'>
+            <a class='navItem skillsLink'href='#skillsTarget'>Skills</a>
           </div>
           <div class='navBox'>
             <a class='navItem projectsLink'href='#projectsTarget'>Projects</a>
@@ -51,186 +47,239 @@
         </div>
       </div>
 
-    </div>
-
     <!-- About Me -->
     <div class='aboutMe' id='aboutMe'>
-
-      <div class='aboutMeText'>
-        <p class='welcome sectionHeader'> Welcome, it's nice to meet you.</p>
-        <p>
-          Hi, I am Sean Briar. When I am not adventuring outside or have my nose in a book, I am helping to improve the wellbeing of underrepresented communities via public interest technology. I use my anthropological background to see technology through a humanistic lens, and try to cultivate meaningful web applications that enrich the lives of others.
-          <br />
-          <br />
-          I earned my skills as a full stack web developer while attending General Assembly's Web Development Immersive bootcamp. This experience was equal parts exciting and challenging, and I use what I learned there to develop passion projects and be a successful web developer professionally.
-        </p>
-        <div class='skills'>
-          <div class='icons'>
-            <i class="material-icons medium">all_inclusive</i><i class="material-icons medium">keyboard</i> <i class="material-icons medium">settings_ethernet</i>
+        <div class="aboutmeP">
+          <div class="aboutmeText">
+            <p class='welcome'>
+              Hey, I'm Sean.</p>
+              <hr />
+            <p>
+              When I am not adventuring outside or have my nose in a book, I am helping to improve the wellbeing of underrepresented communities via public interest technology. I use my anthropological background to see technology through a humanistic lens, and try to cultivate meaningful web applications that enrich the lives of others.</p>
+            <p>
+              I am big on teamwork and collaboration. Have an idea for a cool project? Say hello. Let's make it happen!
+            </p>
           </div>
-          <ul>
-            <li><i class="material-icons tiny">keyboard_arrow_right</i>HTML, CSS, & Sass</li>
-            <li><i class="material-icons tiny">keyboard_arrow_right</i>JavaScript, Ruby, PHP</li>
-            <li><i class="material-icons tiny">keyboard_arrow_right</i>React, Angular.Js, WordPress</li>
-            <li><i class="material-icons tiny">keyboard_arrow_right</i>Node.js, Ruby on Rails, Express</li>
-            <li><i class="material-icons tiny">keyboard_arrow_right</i>MongoDB, PostgreSQL</li>
-          </ul>
         </div>
-      </div>
+        <div class="aboutmeImgDiv">
+          <!-- desk image here -->
+        </div>
     </div>
 
-    <!-- Projects -->
+    <!--- Skills -->
+    <div class="skills" id="skills">
+      <div class="skillsImg">
+          <!-- beach image -->
+      </div>
+
+      <div class="skillsList">
+        <div class="skillsListInner">
+          <div class="skillsP">
+              <p class="skillsBlurb">My skillset is constantly expanding as my career grows
+              <br />Here are just a few of the technologies I work with regularly</p>
+          </div>
+          <div class="skillsDiv">
+            <div class="skillsLeft">
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Sass</li>
+              </ul>
+            </div>
+            <div class="emptyDiv">
+              <!-- emptyDiv  -->
+            </div>
+          </div>
+
+          <div class="skillsDiv">
+            <div class="emptyDiv">
+              <!-- emptyDiv  -->
+            </div>
+            <div class="skillsRight">
+              <ul>
+                <li>JavaScript</li>
+                <li>Ruby</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="skillsDiv">
+            <div class="skillsLeft">
+              <ul>
+                <li>React.js</li>
+                <li>Angular.js</li>
+                <li>WordPress</li>
+              </ul>
+            </div>
+            <div class="emptyDiv">
+              <!-- emptyDiv  -->
+            </div>
+          </div>
+
+          <div class="skillsDiv">
+            <div class="emptyDiv">
+              <!-- emptyDiv  --> </div>
+            <div class="skillsRight">
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Ruby on Rails</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="skillsDiv">
+            <div class="skillsLeft bottom">
+              <ul>
+                <li>MongoDB</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="emptyDiv">
+              <!-- emptyDiv  -->
+            </div>
+          </div>
+
+        </div> <!-- end .skillsListInner div -->
+      </div> <!-- end .skillsList div -->
+    </div> <!-- end .skills div -->
+
+
+    <!-- =========== Projects ==============-->
     <div class='projects' id='projects'>
-      <a name='projectsTarget'></a>
-      <p class='sectionHeader'>Projects</p>
-      <div class='projectBody'>
-
-<!-- ============ EnbyLoo ===============-->
-        <div class="card small">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="css/assets/enby_loo.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">EnbyLoo<i class="material-icons right"></i></span>
-              <p><a target='_blank' href='https://enby-loo.herokuapp.com/'>Live site</a>|<a target='_blank' href='https://github.com/SeanBriar/enby_loo'>GitHub</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">EnbyLoo<i class="material-icons right">close</i></span>
-            <div >
-              <p class='projectParagraph'>EnbyLoo is an app that serves as a resource directory for all-gender restrooms in the Sacramento area. Search functionality and a static Google Map were added for a better user experience.
-                <br />
-                <br />
-              <em>Technologies Used:</em> HTML, Sass, Ruby on Rails, React, Postgres</p>
-            </div>
-          </div>
-        </div>
-
-<!-- ========= myMarkets ============ -->
-        <div class="card small sticky-action">
-          <div class="card-image ">
-            <img class="activator projectImage" src="css/assets/myMarket.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">myMarkets<i class="material-icons right"></i></span>
-            <p><a target='_blank' href='https://my-markets.herokuapp.com/'>Live site</a>|<a target='_blank' href='https://github.com/kweingart08/myMarket'>GitHub</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">myMarkets<i class="material-icons right">X</i></span>
-            <div >
-              <p class='projectParagraph'>myMarkets is an app that makes it easy to locate businesses that accept EBT food assistance. This project was part of a final group assignment at General Assembly. My responsibility in creating this app was aiding in building React components, seeding Postgres database, general concept, and group organization with Trello.
-                <br />
-                <br />
-              <em>Technologies Used:</em> HTML, CSS, Ruby on Rails, React, Postgres</p>
-            </div>
-          </div>
-        </div>
-
-<!-- ======= Tipsy Tiki ======== -->
-        <div class="card small">
-          <div class="card-image ">
-            <img class="activator projectImage" src="css/assets/tiki.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">The Tipsy Tiki<i class="material-icons right"></i></span>
-            <p><a target='_blank' href='https://tipsytiki.herokuapp.com/'>Live site</a>|<a target='_blank' href='https://github.com/colleencleary/tikidrinks'>GitHub</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">The Tipsy Tiki<i class="material-icons right">X</i></span>
-            <p class='projectParagraph'>
-              This app was a group project put together by myself and two other GA students. For this project, I was responsible for writing and maintaining the backend functionality with full CRUD and 7 RESTful routes.
-              <br />
-              <br />
-              <em>Technologies Used:</em> HTML, CSS, Heroku, Node.js, Express, MongoDB, AngularJS.
-            </p>
-          </div>
-        </div>
-
-<!-- ========= bookshelf. =========== -->
-        <div class="card small">
-          <div class="card-image ">
-            <img class="activator projectImage" src="css/assets/books.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">bookshelf.<i class="material-icons right"></i></span>
-            <p><a target='_blank' href='https://still-spire-94893.herokuapp.com/books'>Live site</a>|<a target='_blank' href='https://github.com/SeanBriar/bookshelfApp'>GitHub</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">bookshelf.<i class="material-icons right">X</i></span>
-            <p class='projectParagraph'>
-              bookshelf. is a literature directory that allows users to keep track of their favorite books. This is a full MEN stack app that includes all 7 RESTful routes and a sessions/auth login feature.
-              <br />
-              <br />
-              <em>Technologies Used:</em> HTML, CSS, Heroku, Node.js, Express, MongoDB.
-            </p>
-          </div>
-        </div>
-
-<!-- ======== HPC4 ============ -->
-        <div class="card small">
-          <div class="card-image ">
-            <img class="activator projectImage" src="css/assets/hpc42.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">Harry Potter Connect4<i class="material-icons right"></i></span>
-            <p><a target='_blank' href='https://seanbriar.github.io/'>Live site</a>|<a target='_blank' href='https://github.com/SeanBriar/SeanBriar.github.io'>GitHub</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">Harry Potter Connect4<i class="material-icons right">X</i></span>
-            <p class='projectParagraph'>
-              My first attempt at creating a game app. I wanted to mimic the design themes seen in the Harry Potter franchise. This build was fun and challenging! As with all of my projects, it continues to be an app that I will go back to and improve.
-              <br />
-              <br />
-              <em>Technologies Used:</em> HTML, CSS, jQuery, GitHub Pages.
-            </p>
-          </div>
-        </div>
-
-<!---------- JS Snake -------->
-
-        <div class="card small">
-          <div class="card-image ">
-            <img class="activator projectImage" src="css/assets/snake.png">
-          </div>
-          <div class="card-content">
-            <span class="card-title activator grey-text text-darken-4">SNAKE! JavaScript Style<i class="material-icons right"></i></span>
-            <p><a target='_blank' href='https://seanbriar.github.io/snake/'>Live site</a>|<a target='_blank' href='https://github.com/SeanBriar/snake'>GitHub</a></p>
-          </div>
-          <div class="card-reveal">
-            <span class="card-title grey-text text-darken-4">SNAKE! JavaScript Style<i class="material-icons right">X</i></span>
-            <p class='projectParagraph'>
-              Classic Snake game using Javascript, HTML, and CSS built with guidance from a tutorial on freeCodeCamp that can be found <a href="https://medium.freecodecamp.org/think-like-a-programmer-how-to-build-snake-using-only-javascript-html-and-css-7b1479c3339e">here</a>.
-              <br />
-              <br />
-              <em>Technologies Used:</em> HTML, CSS, jQuery, GitHub Pages.
-            </p>
-          </div>
-        </div>
-
+      <div class="projectsHeader">
+        <h3 class="projectH3">Projects: Past, Present, and Future</h3>
       </div>
-    </div>
+      <div class='projectBody'>
+        <!-- EnbyLoo -->
+        <div class="image">
+          <div class="image-hover">
+            <div class="image-title">EnbyLoo</div>
+            <div class="image-line"></div>
+            <div class="image-caption">
+              EnbyLoo is an app that serves as a resource directory for all-gender restrooms in the Sacramento area. Search functionality and a Google Map were added for a better user experience.
+                <br />
+                <br />
+              <em>Technologies Used:</em> <br>HTML, CSS/Sass, Ruby on Rails, React.js, PostgreSQL
+              <br />
+              <br />
+              <a target='_blank' class="liveSiteLink" href='https://enby-loo.herokuapp.com/'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/SeanBriar/enby_loo'>GitHub</a>
+            </div>
+          </div>
+          <img src="css/assets/enby_loo.png" class="image-thumbnail" alt="A picture of the EnbyLoo webpage">
+        </div>
+
+        <!-- MyMarkets -->
+        <div class="image">
+          <div class="image-hover">
+            <div class="image-title">myMarkets</div>
+            <div class="image-line"></div>
+            <div class="image-caption">
+              myMarkets is an app that makes it easy to locate businesses that accept EBT food assistance. This project was part of a group assignment at General Assembly. My responsibilities were aiding in building React components, seeding PostgreSQL database, and general concept.
+                <br />
+                <br />
+              <em>Technologies Used:</em><br> HTML, CSS, Ruby on Rails, React.js, PostgreSQL
+              <br />
+              <br />
+              <a target='_blank' class="liveSiteLink" href='https://my-markets.herokuapp.com/'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/kweingart08/myMarket'>GitHub</a>
+            </div>
+          </div>
+          <img src="css/assets/myMarket.png" class="image-thumbnail" alt="A picture of the myMarket webpage">
+        </div>
+
+        <!-- Tipsy Tiki -->
+        <div class="image">
+          <div class="image-hover">
+            <div class="image-title">The Tipsy Tiki</div>
+            <div class="image-line"></div>
+            <div class="image-caption">
+                This app was a group project put together by myself and two other GA students. For this project, I was responsible for writing and maintaining the backend functionality with full CRUD and 7 RESTful routes.
+                <br />
+                <br />
+                <em>Technologies Used:</em><br> HTML, CSS, Heroku, Node.js, Express, MongoDB, Angular.js
+                <br />
+                <br />
+                <a target='_blank' class="liveSiteLink" href='https://tipsytiki.herokuapp.com/'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/colleencleary/tikidrinks'>GitHub</a>
+            </div>
+          </div>
+          <img src="css/assets/tiki.png" class="image-thumbnail" alt="A picture of the Tipsy Tiki webpage">
+        </div>
+
+        <!-- bookshelf.-->
+        <div class="image">
+          <div class="image-hover">
+            <div class="image-title">bookshelf.</div>
+            <div class="image-line"></div>
+            <div class="image-caption">
+                bookshelf. is a literature directory that allows users to keep track of their favorite books. This is a full MEN stack app that includes all 7 RESTful routes and a sessions/auth login feature.
+                <br />
+                <br />
+                <em>Technologies Used:</em><br> HTML, CSS, Heroku, Node.js, Express, MongoDB.
+                <br />
+                <br />
+                <a target='_blank' class="liveSiteLink" href='https://still-spire-94893.herokuapp.com/books'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/SeanBriar/bookshelfApp'>GitHub</a>
+            </div>
+          </div>
+          <img src="css/assets/books.png" class="image-thumbnail" alt="A picture of the bookshelf. webpage">
+        </div>
+
+        <!-- HPC4 -->
+        <div class="image">
+          <div class="image-hover">
+            <div class="image-title">Harry Potter Connect4</div>
+            <div class="image-line"></div>
+            <div class="image-caption">
+                My first attempt at creating a game app. I wanted to mimic the design themes seen in the Harry Potter franchise. This build was fun and challenging! As with all of my projects, it continues to be an app that I will go back to and improve.
+                <br />
+                <br />
+                <em>Technologies Used:</em> <br>HTML, CSS, jQuery, GitHub Pages.
+                <br />
+                <br />
+                <a target='_blank' class="liveSiteLink" href='https://seanbriar.github.io/'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/SeanBriar/SeanBriar.github.io'>GitHub</a>
+            </div>
+          </div>
+          <img src="css/assets/hpc42.png" class="image-thumbnail" alt="A picture of the Harry Potter Connect4 webpage">
+        </div>
+
+      </div> <!-- projects body div -->
+    </div> <!-- projects div -->
+
+
     <!-- contact -->
     <div class='contact' id='contact'>
       <a class='target' name='contactTarget'></a>
+
       <div class='contactBox'>
-        <div class='headerArrow'>
-          <p id='sayHello'> Say Hello...</p>
-          <a class='navItem backToTopLink' id='backToTopLink' href='#top'> <i class="material-icons">arrow_upward</i> </a>
+        <div class='contactInfo'>
+          <h4 class="sayHello">Say Hello...</h4>
+          <img class="profilePic" src="./css/assets/profile_pic_small.png" alt="a picture of Sean Briar wearing a hat with a coastal scene in the background"/>
+          <br />
+          <br />
+            Sean.Briar1011@gmail.com
+            <br />
+            <br />
 
-        </div>
-        <div class='contactInfoDiv' >
-          <p class='contactInfo'>
-            <i class="material-icons tiny">email</i> Sean.Briar1011@gmail.com
+            <a href="https://github.com/SeanBriar" target="_blank"><i class="fab fa-github"></i>/SeanBriar</a>
             <br />
             <br />
-            <i class="material-icons tiny">settings_ethernet</i> <a href="https://github.com/SeanBriar" target="_blank">GitHub</a>
-            <br />
-            <br />
-            <i class="material-icons tiny">textsms</i> <a href='https://www.linkedin.com/in/seanbriar/' target='_blank'>LinkedIn</a>
-          </p>
 
+            <a href='https://www.linkedin.com/in/seanbriar/' target='_blank'><i class="fab fa-linkedin"></i>/seanbriar</a>
+            <br />
+            <br />
+            <br />
+            <div class="topArrowDiv">
+              <a class='backToTopLink' id='backToTopLink' href='#top'><i class="fas fa-chevron-up"></i></a>
+            </div>
         </div>
+
+        <div class='contactInfoImg' >
+          <!-- keyboard image -->
         </div>
+      </div>
     </div>
-    <!-- Small footer -->
+
+
   </body>
 </html>

@@ -6,6 +6,14 @@ $(()=>{
        );
    });
 
+   $('.skillsLink').click(function(){
+        $('html, body').animate({
+            scrollTop: $('#skills').position().top },
+            1000
+        );
+    });
+
+
    $('.projectsLink').click(function(){
         $('html, body').animate({
             scrollTop: $('#projects').position().top },
