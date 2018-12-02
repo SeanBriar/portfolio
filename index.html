@@ -14,6 +14,9 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="css/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="css/assets/favicon.ico" type="image/x-icon">
+    <!-- Responsive Meta -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
     <title>Sean Briar O'Neill</title>
   </head>
 
@@ -21,33 +24,33 @@
 
   <body>
     <div class='main'>
-      <!-- Nav with links to contact, projects, github, linked in -->
-      <div class='nav' id='topTarget'>
-        <h1>
-          Sean Briar O'Neill
-        </h1>
-        <div class='navItems'>
-          <div class='navBox' >
-            <a class='navItem aboutMeLink' href='#aboutMe'>About Me</a>
-          </div>
-          <div class='navBox'>
-            <a class='navItem skillsLink'href='#skillsTarget'>Skills</a>
-          </div>
-          <div class='navBox'>
-            <a class='navItem projectsLink'href='#projectsTarget'>Projects</a>
-          </div>
-          <div class='navBox'>
-            <a class='navItem contactLink' href='#contactTarget'>Contact</a>
-          </div>
+      <!-- Nav with links to contact, projects, skills-->
+        <div class='nav' id='topTarget'>
+          <h1>
+            Sean Briar O'Neill
+          </h1>
+          <div class='navItems'>
+            <div class='navBox' >
+              <a class='navItem aboutMeLink linkMB' href='#aboutMe'>About Me</a>
+            </div>
+            <div class='navBox'>
+              <a class='navItem skillsLink linkMB'href='#skillsTarget'>Skills</a>
+            </div>
+            <div class='navBox'>
+              <a class='navItem projectsLink linkMB'href='#projectsTarget'>Projects</a>
+            </div>
+            <div class='navBox'>
+              <a class='navItem contactLink linkMB' href='#contactTarget'>Contact</a>
+            </div>
 
-          <div class='navBox'>
-            <a class='navItem' target="_blank" href='https://resume.creddle.io/resume/9ch7tw503hf'> Resume</a>
-
+            <div class='navBox'>
+              <a class='navItem linkMB' target="_blank" href='https://resume.creddle.io/resume/9ch7tw503hf'> Resume</a>
+            </div>
           </div>
         </div>
-      </div>
 
     <!-- About Me -->
+
     <div class='aboutMe' id='aboutMe'>
         <div class="aboutmeP">
           <div class="aboutmeText">
@@ -61,14 +64,15 @@
             </p>
           </div>
         </div>
-        <div class="aboutmeImgDiv">
+        <div class="aboutmeImgDiv only-mb">
           <!-- desk image here -->
         </div>
     </div>
 
+
     <!--- Skills -->
     <div class="skills" id="skills">
-      <div class="skillsImg">
+      <div class="skillsImg only-mb">
           <!-- beach image -->
       </div>
 
@@ -170,6 +174,24 @@
           </div>
           <img src="css/assets/enby_loo.png" class="image-thumbnail" alt="A picture of the EnbyLoo webpage">
         </div>
+         <!-- EnbyLoo MOBILE -->
+        <div class="projectMB">
+          <div class="enbylooDiv">
+            <div class="projectBlurb">
+              <div class="image-caption">
+
+                <h3>EnbyLoo</h3>
+                EnbyLoo is an app that serves as a resource directory for all-gender restrooms in the Sacramento area. Search functionality and a Google Map were added for a better user experience.
+                  <br />
+                  <br />
+                <em>Technologies Used:</em> <br>HTML, CSS/Sass, Ruby on Rails, React.js, PostgreSQL
+                <br />
+                <br />
+                <a target='_blank' class="liveSiteLink" href='https://enby-loo.herokuapp.com/'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/SeanBriar/enby_loo'>GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- MyMarkets -->
         <div class="image">
@@ -187,6 +209,23 @@
             </div>
           </div>
           <img src="css/assets/myMarket.png" class="image-thumbnail" alt="A picture of the myMarket webpage">
+        </div>
+        <!-- myMarkets MOBILE -->
+        <div class="projectMB">
+          <div class="myMarketsDiv">
+            <div class="projectBlurb">
+              <div class="image-caption">
+                <h3>myMarkets</h3>
+                myMarkets is an app that makes it easy to locate businesses that accept EBT food assistance. This project was part of a group assignment at General Assembly. My responsibilities were aiding in building React components, seeding PostgreSQL database, and general concept.
+                  <br />
+                  <br />
+                <em>Technologies Used:</em><br> HTML, CSS, Ruby on Rails, React.js, PostgreSQL
+                <br />
+                <br />
+                <a target='_blank' class="liveSiteLink" href='https://my-markets.herokuapp.com/'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/kweingart08/myMarket'>GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Tipsy Tiki -->
@@ -206,6 +245,25 @@
           </div>
           <img src="css/assets/tiki.png" class="image-thumbnail" alt="A picture of the Tipsy Tiki webpage">
         </div>
+        <!-- Tipsy MOBILE -->
+        <div class="projectMB">
+          <div class="tipsyDiv">
+            <div class="projectBlurb">
+              <div class="image-caption">
+                <h3>The Tipsy Tiki</h3>
+                This app was a group project put together by myself and two other GA students. For this project, I was responsible for writing and maintaining the backend functionality with full CRUD and 7 RESTful routes.
+                <br />
+                <br />
+                <em>Technologies Used:</em><br> HTML, CSS, Heroku, Node.js, Express, MongoDB, Angular.js
+                <br />
+                <br />
+                <a target='_blank' class="liveSiteLink" href='https://tipsytiki.herokuapp.com/'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/colleencleary/tikidrinks'>GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
         <!-- bookshelf.-->
         <div class="image">
@@ -225,6 +283,24 @@
           <img src="css/assets/books.png" class="image-thumbnail" alt="A picture of the bookshelf. webpage">
         </div>
 
+        <!-- bookshelf MOBILE -->
+        <div class="projectMB">
+          <div class="bookDiv">
+            <div class="projectBlurb">
+              <div class="image-caption">
+                <h3>bookshelf.</h3>
+                bookshelf. is a literature directory that allows users to keep track of their favorite books. This is a full MEN stack app that includes all 7 RESTful routes and a sessions/auth login feature.
+                <br />
+                <br />
+                <em>Technologies Used:</em><br> HTML, CSS, Heroku, Node.js, Express, MongoDB.
+                <br />
+                <br />
+                <a target='_blank' class="liveSiteLink" href='https://still-spire-94893.herokuapp.com/books'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/SeanBriar/bookshelfApp'>GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- HPC4 -->
         <div class="image">
           <div class="image-hover">
@@ -241,6 +317,24 @@
             </div>
           </div>
           <img src="css/assets/hpc42.png" class="image-thumbnail" alt="A picture of the Harry Potter Connect4 webpage">
+        </div>
+
+        <!-- Harry Potter MOBILE -->
+        <div class="projectMB">
+          <div class="harryDiv">
+            <div class="projectBlurb">
+              <div class="image-caption">
+                <h3>Harry Potter Connect4</h3>
+                My first attempt at creating a game app. I wanted to mimic the design themes seen in the Harry Potter franchise. This build was fun and challenging! As with all of my projects, it continues to be an app that I will go back to and improve.
+                <br />
+                <br />
+                <em>Technologies Used:</em> <br>HTML, CSS, jQuery, GitHub Pages.
+                <br />
+                <br />
+                <a target='_blank' class="liveSiteLink" href='https://seanbriar.github.io/'>Live site</a> | <a target='_blank' class="liveSiteLink" href='https://github.com/SeanBriar/SeanBriar.github.io'>GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div> <!-- projects body div -->
@@ -274,7 +368,7 @@
             </div>
         </div>
 
-        <div class='contactInfoImg' >
+        <div class='contactInfoImg only-mb' >
           <!-- keyboard image -->
         </div>
       </div>
