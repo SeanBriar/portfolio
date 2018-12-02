@@ -376,10 +376,6 @@ i {
   font-style: italic;
 }
 
-.fa-chevron-up {
-
-}
-
 .contactInfo > a {
   color: var(--powder-white);
 }
@@ -395,6 +391,8 @@ i {
   width: 100%;
   text-align: left;
 }
+
+
 
 /* Media */
 @media only screen
@@ -451,6 +449,15 @@ and (orientation: portrait) {
   }
 
   /* projects */
+  .projects {
+    margin-bottom: 600px;
+
+  }
+  .projectBody {
+    background: none;
+    position: absolute;
+  }
+
   .image {
     display: none !important
   }
@@ -462,12 +469,6 @@ and (orientation: portrait) {
     border: 1px solid var(--powder-white);
   }
 
-  .enbylooDiv {
-    background-image: url('./assets/enby_loo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
   .projectBlurb {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
@@ -476,6 +477,12 @@ and (orientation: portrait) {
   h3 {
     width: 100%;
     text-align: center;
+  }
+
+  .enbylooDiv {
+    background-image: url('./assets/enby_loo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .myMarketsDiv {
@@ -489,7 +496,33 @@ and (orientation: portrait) {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .bookDiv {
+    background-image: url('./assets/books.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .harryDiv {
+    background-image: url('./assets/hpc42.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* contact */
+  .contactBox {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    padding-top: 0;
+  }
 }
+
+
+
+
+
+
 /* =========== CREDITS =========== */
 /* Project Thumbnail inspired by @curcoder */
 /* Beach Image: Daria Kopylova on unsplash.com */
