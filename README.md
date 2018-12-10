@@ -4,6 +4,14 @@ This is my portfolio with a short bio about me, a collection of my work, and con
 
 Take a look here: https://seanbriar.github.io/portfolio/
 
+Current design of this portfolio, which is also mobile friendly: 
+
+![screen shot 2018-12-10 at 12 13 23 pm](https://user-images.githubusercontent.com/37387868/49760980-9a50db00-fc7a-11e8-82bd-e0e965018342.png)
+![screen shot 2018-12-10 at 12 30 38 pm](https://user-images.githubusercontent.com/37387868/49760917-78efef00-fc7a-11e8-9066-37a77f7c333d.png)
+![screen shot 2018-12-10 at 12 30 51 pm](https://user-images.githubusercontent.com/37387868/49760966-91600980-fc7a-11e8-9677-c633ee12b0f7.png)
+
+
+
 The design for this portfolio is currently on version 2. I would like to use this portfolio as a way to continue to expand my design skills and experiement with new techniques. Below you can previous versions:
 
 #### V.1
