@@ -509,6 +509,11 @@ and (orientation: portrait) {
     background-repeat: no-repeat;
   }
 
+  .missioncritDiv {
+    background-image: url('./assets/missioncrit.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   /* contact */
   .contactBox {
     position: absolute;
