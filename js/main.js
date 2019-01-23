@@ -200,7 +200,7 @@ $(document).ready(function() {
 
 
     /*======== Contact Form Setup ========*/
-    contactFormSetup();
+    // contactFormSetup();
 });
 
 
