@@ -270,69 +270,69 @@ function initMap() {
 }
 
 /********** Function Contact Form Setup **********/
-function contactFormSetup() {
-
-    /*======== Check Field Have Value When Page Load ========*/
-    $('.input__field').each(function() {
-        if($(this).val()) {
-            $(this).parent('.input').addClass('input--filled');
-        } else {
-            $(this).parent('.input').removeClass('input--filled');
-        }
-    });
-
-    /*======== Check Field Have Value When Keyup ========*/
-    $('.input__field').on('keyup', function() {
-        if($(this).val()) {
-            $(this).parent('.input').addClass('input--filled');
-        } else {
-            $(this).parent('.input').removeClass('input--filled');
-        }
-    });
-
-
-    $('#contact-form').on('submit', function(e) {
-        e.preventDefault();
-        var name = $('#cf-name').val(),
-            email = $('#cf-email').val(),
-            message = $('#cf-message').val(),
-            $messageBox = $('#contact-form .message'),
-            required = 0;
-
-
-        $('.cf-validate', this).each(function() {
-            if($(this).val() == '') {
-                $(this).addClass('cf-error');
-                required += 1;
-            } else {
-                if($(this).hasClass('cf-error')) {
-                    $(this).removeClass('cf-error');
-                    if(required > 0) {
-                        required -= 1;
-                    }
-                }
-            }
-        });
-        if( required === 0 ) {
-            $.ajax({
-                type: 'POST',
-                url: 'mail.php',
-                data: {
-                    cf_name: name,
-                    cf_email: email,
-                    cf_message: message
-                },
-                success: function(data) {
-                    $("#contact-form .input__field").val("");
-                    showAlertBox(data.status, data.responseText);
-                },
-                error: function(data) {
-                    showAlertBox(data.status, data.responseText);
-                }
-            });
-        }
-    });
-}
+// function contactFormSetup() {
+//
+//     /*======== Check Field Have Value When Page Load ========*/
+//     $('.input__field').each(function() {
+//         if($(this).val()) {
+//             $(this).parent('.input').addClass('input--filled');
+//         } else {
+//             $(this).parent('.input').removeClass('input--filled');
+//         }
+//     });
+//
+//     /*======== Check Field Have Value When Keyup ========*/
+//     $('.input__field').on('keyup', function() {
+//         if($(this).val()) {
+//             $(this).parent('.input').addClass('input--filled');
+//         } else {
+//             $(this).parent('.input').removeClass('input--filled');
+//         }
+//     });
+//
+//
+//     $('#contact-form').on('submit', function(e) {
+//         e.preventDefault();
+//         var name = $('#cf-name').val(),
+//             email = $('#cf-email').val(),
+//             message = $('#cf-message').val(),
+//             $messageBox = $('#contact-form .message'),
+//             required = 0;
+//
+//
+//         $('.cf-validate', this).each(function() {
+//             if($(this).val() == '') {
+//                 $(this).addClass('cf-error');
+//                 required += 1;
+//             } else {
+//                 if($(this).hasClass('cf-error')) {
+//                     $(this).removeClass('cf-error');
+//                     if(required > 0) {
+//                         required -= 1;
+//                     }
+//                 }
+//             }
+//         });
+//         if( required === 0 ) {
+//             $.ajax({
+//                 type: 'POST',
+//                 url: 'mail.php',
+//                 data: {
+//                     cf_name: name,
+//                     cf_email: email,
+//                     cf_message: message
+//                 },
+//                 success: function(data) {
+//                     $("#contact-form .input__field").val("");
+//                     showAlertBox(data.status, data.responseText);
+//                 },
+//                 error: function(data) {
+//                     showAlertBox(data.status, data.responseText);
+//                 }
+//             });
+//         }
+//     });
+// }
 
 
 /********** Function Show Alert Box **********/
@@ -348,4 +348,3 @@ function showAlertBox(response, message) {
     }
     $alContainer.fadeIn(300).delay(2000).fadeOut(400);
 }
-
