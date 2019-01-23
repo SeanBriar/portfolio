@@ -175,15 +175,15 @@ $(document).ready(function() {
     });
 
     /*======== Portfolio Video Link Setup ========*/
-    $('.portfolio-items .video-link').magnificPopup({
-        type: 'iframe',
-        gallery: {
-            enabled: true
-        }
-    });
+    // $('.portfolio-items .video-link').magnificPopup({
+    //     type: 'iframe',
+    //     gallery: {
+    //         enabled: true
+    //     }
+    // });
 
     /*======== Portfolio Ajax Link Setup ========*/
-    ajaxPortfolioSetup($('.portfolio-items .ajax-link'), $('.ajax-portfolio-popup'));
+    // ajaxPortfolioSetup($('.portfolio-items .ajax-link'), $('.ajax-portfolio-popup'));
 
     /*======== Portfolio Tilt Setup ========*/
     $('#portfolio .item figure').tilt({
@@ -205,69 +205,69 @@ $(document).ready(function() {
 
 
 /*********** Function Ajax Portfolio Setup **********/
-function ajaxPortfolioSetup($ajaxLink, $ajaxContainer) {
-    $ajaxLink.on('click', function(e) {
-        var link = $(this).attr('href');
-
-        if(link === "#") {
-            e.preventDefault();
-            return;
-        }
-
-        $ajaxContainer.find('.content-wrap .popup-content').empty();
-
-        $ajaxContainer.addClass('on');
-        $.ajax({
-            url: link,
-            beforeSend: function() {
-                $ajaxContainer.find('.ajax-loader').show();
-            },
-            success: function(result) {
-                $ajaxContainer.find('.content-wrap .popup-content').html(result);
-            },
-            complete: function() {
-                $ajaxContainer.find('.ajax-loader').hide();
-            },
-            error: function(e) {
-                $ajaxContainer.find('.ajax-loader').hide();
-                $ajaxContainer.find('.content-wrap .popup-content').html('<h1 class="text-center">Something went wrong! Retry or refresh the page.</h1>')
-            }
-        });
-        e.preventDefault();
-    });
-
-    $ajaxContainer.find('.popup-close').on('click', function() {
-        $ajaxContainer.removeClass('on');
-    });
-
-
-}
-
+// function ajaxPortfolioSetup($ajaxLink, $ajaxContainer) {
+//     $ajaxLink.on('click', function(e) {
+//         var link = $(this).attr('href');
+//
+//         if(link === "#") {
+//             e.preventDefault();
+//             return;
+//         }
+//
+//         $ajaxContainer.find('.content-wrap .popup-content').empty();
+//
+//         $ajaxContainer.addClass('on');
+//         $.ajax({
+//             url: link,
+//             beforeSend: function() {
+//                 $ajaxContainer.find('.ajax-loader').show();
+//             },
+//             success: function(result) {
+//                 $ajaxContainer.find('.content-wrap .popup-content').html(result);
+//             },
+//             complete: function() {
+//                 $ajaxContainer.find('.ajax-loader').hide();
+//             },
+//             error: function(e) {
+//                 $ajaxContainer.find('.ajax-loader').hide();
+//                 $ajaxContainer.find('.content-wrap .popup-content').html('<h1 class="text-center">Something went wrong! Retry or refresh the page.</h1>')
+//             }
+//         });
+//         e.preventDefault();
+//     });
+//
+//     $ajaxContainer.find('.popup-close').on('click', function() {
+//         $ajaxContainer.removeClass('on');
+//     });
+//
+//
+// }
+//
 
 /********** Function Map Initialization **********/
-function initMap() {
-    var latitude = $("#map").data('latitude'),
-        longitude = $("#map").data('longitude'),
-        zoom = $("#map").data('zoom'),
-        cordinates = new google.maps.LatLng(latitude, longitude);
-
-    var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
-        var mapOptions = {
-        zoom: zoom,
-        center: cordinates,
-        mapTypeControl: false,
-        disableDefaultUI: true,
-        zoomControl: true,
-        scrollwheel: false,
-        styles: styles
-    };
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    var marker = new google.maps.Marker({
-        position: cordinates,
-        map: map,
-        title: "We are here!"
-    });
-}
+// function initMap() {
+//     var latitude = $("#map").data('latitude'),
+//         longitude = $("#map").data('longitude'),
+//         zoom = $("#map").data('zoom'),
+//         cordinates = new google.maps.LatLng(latitude, longitude);
+//
+//     var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
+//         var mapOptions = {
+//         zoom: zoom,
+//         center: cordinates,
+//         mapTypeControl: false,
+//         disableDefaultUI: true,
+//         zoomControl: true,
+//         scrollwheel: false,
+//         styles: styles
+//     };
+//     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+//     var marker = new google.maps.Marker({
+//         position: cordinates,
+//         map: map,
+//         title: "We are here!"
+//     });
+// }
 
 /********** Function Contact Form Setup **********/
 // function contactFormSetup() {
