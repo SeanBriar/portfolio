@@ -1529,6 +1529,11 @@ header .header-mobile .header-toggle i {
     font-size: 18px;
 }
 
+.contact-info {
+  display: flex;
+  flex-direction: row; 
+}
+
 
 /*============ 10. Ajax Portfolio ============*/
 
