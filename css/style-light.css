@@ -1439,6 +1439,12 @@ header .header-mobile .header-toggle i {
     content: "\f15c";
 }
 
+figure {
+  -webkit-box-shadow: 4px 7px 23px 0px rgba(122,122,122,1);
+-moz-box-shadow: 4px 7px 23px 0px rgba(122,122,122,1);
+box-shadow: 4px 7px 23px 0px rgba(122,122,122,1);
+}
+
 /*============ 8. Blog Section ============*/
 
 .blog-section {
@@ -1531,7 +1537,7 @@ header .header-mobile .header-toggle i {
 
 .contact-info {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
 
 
